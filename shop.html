@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop — BelleAce Pastry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/site.css" />
+  </head>
+  <body>
+    <div class="announcement">
+      <div class="announcement__track">
+        <div class="announcement__set">
+          <span>New season dropping soon — join the mailing list at the counter</span>
+          <span>New season dropping soon — join the mailing list at the counter</span>
+        </div>
+        <div class="announcement__set" aria-hidden="true">
+          <span>New season dropping soon — join the mailing list at the counter</span>
+          <span>New season dropping soon — join the mailing list at the counter</span>
+        </div>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <button type="button" class="nav-toggle js-nav-toggle" aria-controls="site-nav">Menu</button>
+        <a class="logo" href="./index.html">
+          <img class="logo__mark" src="./assets/images/logo-69786a.png" width="44" height="44" alt="" />
+          <span>BelleAce Pastry</span>
+        </a>
+        <nav id="site-nav" class="site-nav js-site-nav" aria-label="Primary">
+          <a href="./index.html">Home</a>
+          <a class="is-active" href="./shop.html">Dishes</a>
+          <a href="./cakes.html">Pastries</a>
+          <a href="./about.html">About</a>
+          <a href="./locations.html">Locations</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <button type="button" class="icon-btn js-cart-open" aria-label="Open shopping cart">Favourites</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="cart-drawer js-cart-drawer" aria-hidden="true">
+      <div class="cart-drawer__backdrop"></div>
+      <div class="cart-drawer__panel" role="dialog" aria-labelledby="cart-title">
+        <h2 id="cart-title">Your favourites</h2>
+        <p class="prose" style="margin: 0; color: var(--ink-muted)">Your favourites are empty.</p>
+        <a class="btn btn--dark" href="./shop.html" style="margin-top: auto">Continue shopping</a>
+        <button type="button" class="btn btn--outline js-cart-close">Close</button>
+      </div>
+    </div>
+
+    <main>
+      <section class="section" style="padding-top: 2.5rem">
+        <div class="section__inner">
+          <p class="section__label">Dishes</p>
+          <h1 class="section__title">Collection</h1>
+          <p class="prose" style="max-width: 60ch; margin-bottom: 2rem">
+            Browse cakes and pastries the same way customers explore a modern shop: clear categories, simple cards, and
+            a path to detail pages.
+          </p>
+          <div class="grid grid--3">
+            <article class="card">
+              <a class="card__media" href="./product.html"><img src="./assets/images/hero-circle.png" alt="" /></a>
+              <div class="card__body">
+                <h2 class="card__title"><a href="./product.html">Product name</a></h2>
+                <p class="card__meta">Price</p>
+                <a class="btn btn--outline" href="./product.html">Learn more</a>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card__media"></div>
+              <div class="card__body">
+                <h2 class="card__title"><a href="./shop.html">Product name</a></h2>
+                <p class="card__meta">Price</p>
+                <a class="btn btn--outline" href="./contact.html">Pre-order</a>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card__media"></div>
+              <div class="card__body">
+                <h2 class="card__title"><a href="./cakes.html">Product name</a></h2>
+                <p class="card__meta">Price</p>
+                <a class="btn btn--outline" href="./cakes.html">View Dishes</a>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card__media"></div>
+              <div class="card__body">
+                <h2 class="card__title">Product name</h2>
+                <p class="card__meta">Price</p>
+                <button type="button" class="btn btn--outline js-cart-open">Add to Favourites</button>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card__media"></div>
+              <div class="card__body">
+                <h2 class="card__title">Product name</h2>
+                <p class="card__meta">Price</p>
+                <button type="button" class="btn btn--outline js-cart-open">Add to Favourites</button>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card__media"></div>
+              <div class="card__body">
+                <h2 class="card__title">Product name</h2>
+                <p class="card__meta">Price</p>
+                <button type="button" class="btn btn--outline js-cart-open">Add to Favourites</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div>
+          <p class="footer-brand">BelleAce Pastry</p>
+          <p class="footer-note">Small-batch baking with a focus on seasonal ingredients.</p>
+        </div>
+        <div>
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="./shop.html">All products</a></li>
+            <li><a href="./cakes.html">Cakes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Company</h3>
+          <ul>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./locations.html">Locations</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Follow</h3>
+          <ul>
+            <li><a href="https://www.facebook.com/profile.php?id=61561390918648" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="legal"><span>© BelleAce Pastry</span></div>
+    </footer>
+
+    <script src="./js/site.js"></script>
+  </body>
+</html>
